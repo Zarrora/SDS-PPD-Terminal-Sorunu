@@ -1,3 +1,7 @@
+Ben SDS kurulumu sırasında PPD terminal'a ulaşmaya çalışırken hata alan arkadaşlarımızın genelde ctrl+c ile ya da çarpı ile ayrıldıklarını farkettim.
+
+Aynı problemi yaşadım ve aşağıdaki kodlarla tekrar uğraşarak çözümü bulduk.
+
 ### tmux kurulumu:
 
 * y/n onayı çıkınca y diyelim.
@@ -10,6 +14,8 @@ apt-get install tmux
 ```
 tmux new-session -s sds
 ```
+
+Bakın bu kısımda tmux ls ile açık olana kill çekerek yeni bir session oluşturabilirsiniz.
 
 ### SDS nodu başlatalım:
 
